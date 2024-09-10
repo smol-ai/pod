@@ -2,9 +2,9 @@
 temp_*
 
 # Ignore generated audio files
-*.mp3
+/*.mp3
 
 # Ignore dialogue transcript
-dialogue_transcript.txt
+/dialogue_transcript.txt
 
 env

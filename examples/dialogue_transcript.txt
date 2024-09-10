@@ -1,0 +1,46 @@
+Host: Good evening, everyone! Welcome to 'Tech Trends Today'! I'm your host, and tonight we have an action-packed show discussing the top 5 news stories making waves in the tech world. Joining me are Alex, our tech-savvy rock climber, and Sarah, the comedian who always gives us a good laugh while breaking down the tech madness. Today, they'll be diving into the DeepSeek 2.5 launch and other exciting news from Discord communities. So, let's jump right in!
+
+Alex: Thanks, Host! Alright, everyone, let's scale this tech mountain! Our first bit of news comes from the Hugging Face Discord. They've just launched DeepSeek 2.5. It's a beast, combining DeepSeek 2 Chat and Coder 2 into a 238B MoE with a 128k context length. This model also features function calling, set to revolutionize coding and chat experiences. Big shoutout to the Hugging Face community for this one.
+
+Sarah: Whoa, Alex, that's like combining a Swiss Army knife with a supercomputer! But seriously, isn't 238B MoE overkill? Sounds more complicated than trying to teach a cat how to play fetch!
+
+Alex: Haha, good one, Sarah! It's definitely a complex piece of tech, but for developers and AI enthusiasts, more context means more power. Imagine scaling Everest with rocket boots; everything gets more manageable. Plus, the integration of function calling can streamline and automate tasks, making workflows smoother.
+
+Sarah: Just so I don't get lost here, Alex, what's with the function calling? Is it like summoning your AI butler to do your work?
+
+Alex: In a way, yeah! Function calling allows the AI to execute pre-defined tasks autonomously. Think of it as having a Swiss Army knife you talked about, but this time it's actually doing the cutting and dicing for you while you sit back and relax. It’s all about making human commands more functional.
+
+Sarah: Got it, so it's like having a magical spell book where you don't need to wave a wand, just speak the incantation! Moving on, what's next, Alex?
+
+Alex: Next, from the Unsloth AI Discord, we've got some bumps in the road with model fine-tuning. Users are hitting snags with repetitive outputs during inference, especially for paraphrasing tasks. The community suggests optimizing hyperparameters—like learning rate and batch size—could help. Shoutout to the Unsloth crew for navigating these rough terrains.
+
+Sarah: Sounds like they're caught in a tech version of Groundhog Day! Reset those parameters, folks, or you'll be repeating 'I got you, babe' forever!
+
+Alex: Exactly, Sarah. It's all about fine-tuning until you reach that perfect balance. Speaking of balance, members also noted adjusting 'max grad norm' helped stabilize loss spikes. Imagine adjusting your harness mid-climb to avoid any sudden falls.
+
+Sarah: Okay, stabilizing loss spikes sounds more intense than my last round of Overwatch. What's the next news climb for us, Alex?
+
+Alex: We’ve got some chatter from the LM Studio Discord. Users confirm that LM Studio supports multi-GPU setups, particularly for models like two NVIDIA 3060s. For anyone tackling computational-heavy tasks, this is a significant boost. Props to the LM Studio community for these hard-earned insights.
+
+Sarah: Multiple GPUs? That’s like having extra lives in a video game. Bet the productivity levels are soaring like Donkey Kong on a sugar rush!
+
+Alex: Absolutely, and just like in gaming, having that extra hardware can make all the difference. It allows for better performance and faster computations, similar to having a stronger team in an RPG.
+
+Sarah: I'm all about those stats boosts! What's our next tech gem?
+
+Alex: We've got eye-catching news from the OpenAI Discord. People are buzzing about the M2 Max MacBook Pro’s GPU capabilities—96GB RAM and an effective 72GB video memory. Users are reportedly running 70B models at 9 tokens per second. Major kudos to the OpenAI folks for these spectacular numbers!
+
+Sarah: Whoa, that's like having Hulk-level power in a laptop! You know, with that much juice, even I might stop using my computer just as an expensive notepad.
+
+Alex: It's heavyweight tech, no doubt. The sheer power to run such large models efficiently means pushing AI capabilities further than ever. Imagine scaling a tech mountain with a jetpack!
+
+Sarah: Jetpacks and Hulk laptops, I love it! What’s our final peak to conquer today, Alex?
+
+Alex: Last but not least, from the OpenRouter Discord, Hermes 3 is shifting to a paid model, prompting users to move to a free alternative to avoid service interruptions. Users need to act fast before the weekend to ensure continuity. Big thanks to the OpenRouter team for staying on top of this transition.
+
+Sarah: Typical! Just when you’re getting used to the free stuff, they put a price tag on it. But hey, nothing's truly free these days, not even the tech dreams!
+
+Alex: True words, Sarah. Much like climbing a steep cliff, sometimes you have to invest in the best gear to ensure a safe and efficient ascent. Let’s hope users make this transition smoothly to keep scaling their tech aspirations.
+
+Sarah: Alright, folks, remember to gear up with those free models before the weekend! Thanks, Alex, for helping us scale these tech mountains today. And thank you, our wonderful audience, for joining us on this trek through today's top tech news.
+

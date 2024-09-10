@@ -1,0 +1,10 @@
+# Ignore temp folders
+temp_*
+
+# Ignore generated audio files
+*.mp3
+
+# Ignore dialogue transcript
+dialogue_transcript.txt
+
+env

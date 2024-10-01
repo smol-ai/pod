@@ -57,6 +57,25 @@ def create_text_clip(segment, video_width, video_height):
      .set_start(segment['start_time']) \
      .set_duration(segment['duration'])
 
+def split_segment(segment, video_height, num_subsegments=4):
+    words = segment['text'].split()
+    avg_words = max(1, len(words) // num_subsegments)
+    subsegments = []
+    for sub_i in range(num_subsegments):
+        start_word = sub_i * avg_words
+        end_word = start_word + avg_words
+        sub_text = ' '.join(words[start_word:end_word])
+        sub_start = segment['start_time'] + sub_i * (segment['duration'] / num_subsegments)
+        sub_duration = segment['duration'] / num_subsegments
+        subsegments.append({
+            'text': sub_text,
+            'start_time': sub_start,
+            'duration': sub_duration,
+            'font_size': segment.get('font_size', 48),
+            'position': segment.get('position', ('center', video_height - video_height // 3))
+        })
+    return subsegments
+
 def create_video(audio_file: str, image_path: str, transcript_path: str) -> str:
     log("VIDEO_GEN", "Creating video from audio and image...")
     
@@ -78,15 +97,20 @@ def create_video(audio_file: str, image_path: str, transcript_path: str) -> str:
     # Calculate dimensions for the lower third
     video_width, video_height = image_resized.size
     
-    # Generate text clips in parallel
+    # Generate text clips in parallel with split segments
     with ThreadPoolExecutor() as executor:
+        split_segments = []
+        for segment in transcript:
+            split_segments.extend(split_segment(segment, video_height=video_height))
+        # Ensure split_segments are sorted by start_time
+        split_segments = sorted(split_segments, key=lambda s: s['start_time'])
         text_clips = list(executor.map(
             lambda segment: create_text_clip(
                 segment,
                 video_width,
                 video_height
             ),
-            transcript
+            split_segments
         ))
     
     # Combine all text clips into a single captions layer
@@ -130,7 +154,7 @@ def main():
         model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are an AI assistant that generates image prompts based on text."},
-            {"role": "user", "content": f"Generate a detailed image prompt for AI News Pod cover art based on this transcript. Include a male host and a female host, and the words 'AI News Pod'. Transcript: {json.dumps(transcript)}"}
+            {"role": "user", "content": f"Generate a detailed image prompt for AI News Pod cover art based on this transcript. Include an Indian male host and a blonde female host, and the words 'AI News Pod'. Transcript: {json.dumps(transcript)}"}
         ]
     )
     

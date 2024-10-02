@@ -2,6 +2,8 @@
 
 Convert text to speech using the `ElevenLabs` client. Ensure `rawtext.md` is updated, all environment keys are loaded, and outputs are available in `.mp3`, `.txt`, and `.log` formats.
 
+You can see sample output here: https://github.com/smol-ai/temp
+
 
 ## requirements
 
